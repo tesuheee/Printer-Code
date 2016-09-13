@@ -1,4 +1,4 @@
-changed = [3, 7, 12, 54, 13, 8, 9, 14, 12, 2, 4, 1, -7, -5]
+changed = [3, 7, 12, 54, 13, 8, 9, 14, 12, 2, 4, 1, -7, -5] # input array
 changed.sort!.uniq!.delete_if { |e| e <= 0 }
 
 result = []
@@ -20,4 +20,5 @@ result.each do |member|
     code.push('-')
   end
 end
-p code.join
+
+puts  code.join
